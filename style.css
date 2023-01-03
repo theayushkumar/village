@@ -1,0 +1,610 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    cursor: default;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text_mid {
+    margin: 20px;
+    padding: 6px;
+    text-align: justify;
+}
+
+.mid_text {
+    font-size: 25px;
+    color: rgb(100, 60, 180);
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+}
+
+/*/////////////////// css for header is start ///////////////////////*/
+#header {
+    height: 50px;
+    position: absolute;
+    width: 100%;
+    background: rgb(245 245 245 / 60%);
+    box-shadow: 0px 0px 7px black;
+}
+
+#left_header {
+    width: 50px;
+    float: left;
+    height: 100%;
+}
+
+.fa-bars {
+    margin: 13px 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#menu-box {
+    width: 120px;
+    height: 160px;
+    border-radius: 0px 5px 5px 0px;
+    background: rgb(245 245 245 / 60%);
+    box-shadow: 0px 1px 3px black;
+}
+
+#menu-box li a {
+    font-size: 20px;
+    padding: 10px;
+    line-height: 36px;
+    color: #232323;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #232323;
+    cursor: pointer;
+}
+
+#menu-box li a:hover {
+    color: rgb(111, 66, 193);
+}
+
+.social {
+    width: 100%;
+    height: 40px;
+}
+
+.social_img {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 5px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.social_img img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#right_header {
+    width: calc(100% - 530px);
+    ;
+    height: 100%;
+    float: left;
+}
+
+#right_header ul {
+    height: 100%;
+    width: 100%;
+    padding: 6px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+#right_header ul li {
+    display: inline-flex;
+    margin: 0px 5px;
+}
+
+#right_header ul li a {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #232323;
+    cursor: pointer;
+}
+
+#right_header ul li a:hover {
+    color: rgb(111, 66, 193);
+
+}
+
+#village_name {
+    width: 480px;
+    height: 100%;
+    float: right;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+}
+
+.text_vill_name {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.typewriter {
+    width: 21.5ch;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgb(111, 66, 193);
+    border-right: 4px solid rgb(111, 66, 193);
+    ;
+    animation: cursor 1s step-start infinite,
+        text 5s steps(18) alternate infinite;
+}
+
+@keyframes cursor {
+
+    0%,
+    100% {
+        border-color: rgb(111, 66, 193);
+    }
+}
+
+@keyframes text {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 21ch;
+    }
+}
+
+/*/////////////////// css for header is end ///////////////////////*/
+/*/////////////////// css for main is start ///////////////////////*/
+#main {
+    height: calc(100% - 30px);
+    /* background-color: blue; */
+    overflow-y: auto;
+}
+
+
+#slider {
+    width: 100%;
+    height: 720px;
+}
+
+#slider img {
+    width: 100%;
+    height: 100%;
+}
+
+/* //// item box css here ////// */
+#item_area {
+    height: 600px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.item_box {
+    width: 361px;
+    height: 250px;
+    float: left;
+    text-align: center;
+    margin: 10px;
+}
+
+.item_box_top {
+    height: 65px;
+    width: 100%;
+    font-size: 40px;
+}
+
+.item_box_mid {
+    width: 100%;
+    height: 30px;
+    color: rgb(100, 60, 180);
+
+}
+
+.item_box_bottom {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    height: calc(100% - 95px);
+}
+
+/* //// info box css here /// */
+#info_box {
+    height: 500px;
+}
+
+.info_text_area {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.info_img_area {
+    width: 50%;
+    float: right;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.info_img_box {
+    width: 320px;
+    height: 200px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background: none;
+    padding: 5px;
+    margin: 16px;
+    float: left;
+}
+
+.info_img_box1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 3px;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+.info_img_box1 img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 3px black;
+}
+
+#about {
+    width: 100%;
+    height: 260px;
+    text-align: center;
+}
+
+#contact {
+    width: 100%;
+    height: 230px;
+    text-align: center;
+}
+
+/*/////////////////// css for main is end ///////////////////////*/
+/*/////////////////// css for footer is start ///////////////////////*/
+#footer {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0px;
+    text-align: end;
+    padding: 0px 20px;
+    line-height: 30px;
+    box-sizing: border-box;
+    /* background-color: yellow; */
+    background: rgb(245 245 245 / 60%);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.544);
+}
+
+/*/////////////////// css for footer is end ///////////////////////*/
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+@media (min-width:968px) and (max-width:1535px) {
+    #item_area {
+        height: 840px;
+        overflow: auto;
+    }
+
+    #info_box {
+        height: 500px;
+        overflow: auto;
+    }
+
+    #about {
+        margin-top: 25px;
+        height: auto;
+    }
+}
+
+@media (min-width:815px) and (max-width:968px) {
+    #left_header {
+        display: none;
+    }
+
+    #right_header {
+        width: calc(100% - 500px);
+    }
+
+    #village_name {
+        width: 450px;
+    }
+
+    #item_area {
+        height: 1055px;
+    }
+
+    #info_box {
+        height: 1025px;
+    }
+
+    #about {
+        margin-top: 25px;
+        height: auto;
+    }
+}
+
+
+
+
+@media (min-width:768px) and (max-width:815px) {
+    #right_header {
+        display: none;
+    }
+
+    #village_name {
+        width: 555px;
+    }
+
+    #slider {
+        height: 625px;
+    }
+
+    #item_area {
+        height: 1055px;
+    }
+
+    .item_box {
+        margin: 9px;
+    }
+
+    #info_box {
+        height: 1025px;
+    }
+
+    #about {
+        margin-top: 25px;
+        height: auto;
+    }
+}
+
+
+@media (min-width:668px) and (max-width:768px) {
+    #right_header {
+        display: none;
+    }
+
+    #slider {
+        height: 430px;
+    }
+
+    #item_area {
+        height: 2010px;
+    }
+
+    .item_box {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #info_box {
+        height: 1665px;
+        overflow: auto;
+    }
+
+    .info_text_area {
+        width: 100%;
+        height: auto;
+    }
+
+    .info_img_area {
+        width: 100%;
+        height: auto;
+    }
+
+    .info_img_box {
+        width: calc(100% - 38px);
+        height: 355px;
+        margin: 10px;
+    }
+
+    #about {
+        margin-top: 25px;
+        height: auto;
+    }
+
+
+
+}
+
+
+
+@media (min-width:420px) and (max-width:668px) {
+    #right_header {
+        display: none;
+    }
+
+    #village_name {
+        width: 380px;
+        line-height: 33px;
+    }
+
+    #slider {
+        height: 430px;
+    }
+
+    #item_area {
+        height: 2010px;
+    }
+
+    .item_box {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #info_box {
+        height: 1665px;
+        overflow: auto;
+    }
+
+    .info_text_area {
+        width: 100%;
+        height: auto;
+    }
+
+    .info_img_area {
+        width: 100%;
+        height: auto;
+    }
+
+    .info_img_box {
+        width: calc(100% - 38px);
+        height: 255px;
+        margin: 10px;
+    }
+
+    #about {
+        margin-top: 25px;
+        height: auto;
+    }
+
+}
+
+
+
+@media (min-width:280px) and (max-width:420px) {
+    #right_header {
+        display: none;
+    }
+
+    #village_name {
+        width: 260px;
+        line-height: 33px;
+    }
+
+    .text_vill_name {
+        font-size: 12px;
+    }
+
+    #slider {
+        height: 300px;
+    }
+
+    #item_area {
+        height: 2010px;
+    }
+
+    .item_box {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #info_box {
+        height: 1665px;
+        overflow: auto;
+    }
+
+    .info_text_area {
+        width: 100%;
+        height: auto;
+    }
+
+    .info_img_area {
+        width: 100%;
+        height: auto;
+    }
+
+    .info_img_box {
+        width: 91%;
+        height: 201px;
+        margin: 10px;
+    }
+
+    #about {
+        margin-top: 25px;
+        height: auto;
+    }
+
+    @keyframes text {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 23.5ch;
+        }
+    }
+
+}
+
+@media screen and (max-width:280px) {
+    #right_header {
+        display: none;
+    }
+
+    #village_name {
+        width: 220px;
+        line-height: 33px;
+    }
+
+    .text_vill_name {
+        font-size: 12px;
+    }
+
+    #slider {
+        height: 300px;
+    }
+
+    #item_area {
+        height: 2010px;
+    }
+
+    .item_box {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #info_box {
+        height: 1665px;
+        overflow: auto;
+    }
+
+    .info_text_area {
+        width: 100%;
+        height: auto;
+    }
+
+    .info_img_area {
+        width: 100%;
+        height: auto;
+    }
+
+    .info_img_box {
+        width: 91%;
+        height: 150px;
+        margin: 6px;
+    }
+
+    #about {
+        margin-top: 25px;
+        height: auto;
+    }
+
+    @keyframes text {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 23.5ch;
+        }
+    }
+
+}
